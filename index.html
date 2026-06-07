@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olivia Jakli | Spatial & Data Analyst</title>
+    <style>
+      :root {
+        --green: #1f7a4d;
+        --blue: #1f5b99;
+        --yellow: #f3c84b;
+        --white: #ffffff;
+        --ink: #1f2a37;
+        --soft: #eff7f2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--ink);
+        background: linear-gradient(180deg, #f8fcfa 0%, var(--white) 70%);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 3rem;
+      }
+
+      h1,
+      h2 {
+        margin-top: 0;
+      }
+
+      h1 {
+        color: var(--blue);
+      }
+
+      h2 {
+        color: var(--green);
+        border-left: 4px solid var(--yellow);
+        padding-left: 0.6rem;
+      }
+
+      .hero {
+        display: grid;
+        gap: 1.25rem;
+        grid-template-columns: minmax(180px, 220px) 1fr;
+        align-items: center;
+        background: var(--soft);
+        border: 1px solid #d7eadf;
+        border-radius: 12px;
+        padding: 1.2rem;
+      }
+
+      .photo-placeholder {
+        aspect-ratio: 1;
+        width: 100%;
+        border-radius: 10px;
+        border: 2px dashed var(--green);
+        color: var(--green);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+        background: var(--white);
+        font-weight: bold;
+      }
+
+      .projects {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      .projects li {
+        background: var(--white);
+        border: 1px solid #d9e3ef;
+        border-left: 5px solid var(--blue);
+        border-radius: 8px;
+        padding: 0.9rem;
+      }
+
+      a {
+        color: var(--blue);
+        font-weight: 600;
+      }
+
+      a:hover {
+        color: var(--green);
+      }
+
+      @media (max-width: 700px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero" id="about">
+        <div class="photo-placeholder">Add your photo here</div>
+        <div>
+          <h1>Hi, I'm Olivia.</h1>
+          <p>
+            I am a spatial and data analyst focused on using data visualization,
+            GIS, and analytics to support environmental organizations working on
+            renewable energy and climate mitigation.
+          </p>
+          <p>
+            I enjoy turning complex datasets into clear stories that help teams
+            make informed decisions for impact.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul class="projects">
+          <li>
+            <strong>Spatial Suitability Mapping</strong><br />
+            Site suitability analysis for renewable energy using spatial data.
+            <a href="https://github.com/oliviajakli" target="_blank" rel="noopener noreferrer">View repository</a>
+          </li>
+          <li>
+            <strong>Climate Risk Dashboard</strong><br />
+            Interactive data visualization for climate indicators and trends.
+            <a href="https://github.com/oliviajakli" target="_blank" rel="noopener noreferrer">View demo / code</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Connect with me on
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          or explore more of my work on
+          <a href="https://github.com/oliviajakli" target="_blank" rel="noopener noreferrer">GitHub</a>.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
