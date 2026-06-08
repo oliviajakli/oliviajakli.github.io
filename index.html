@@ -75,6 +75,25 @@
         object-position: center 15%;
       }
 
+      .cloud-masking-visualization {
+        aspect-ratio: auto;
+        display: flex;
+        gap: 0.5rem;
+        width: 100%;
+        border-radius: 10px;
+        overflow: auto;
+        background: var(--white);
+        border: 1px solid #d7eadf;
+      }
+
+      .cloud-masking-visualization img {
+        width: 50%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        object-position: center 15%;
+      }
+
       .projects {
         list-style: none;
         padding: 0;
@@ -137,6 +156,28 @@
             </strong><br />
             Cloud mask algorithm comparison analysis for water quality assessment using spatial data.
             <a href="https://github.com/oliviajakli/cloud-masking" target="_blank" rel="noopener noreferrer">View repository</a>
+            <div class="cloud-masking-visualization">
+              <img
+                src="cloud-masking-results-viz-1.jpg"
+                alt="Visualization of cloud masking algorithm performance comparison results"
+              />
+              <img
+                src="cloud-masking-results-viz-2.jpg"
+                alt="Visualization of cloud masking algorithm performance comparison results"
+              />
+              <img
+                src="cloud-masking-results-viz-3.jpg"
+                alt="Visualization of cloud masking algorithm performance comparison results"
+              />
+              <img
+                src="cloud-masking-results-viz-4.jpg"
+                alt="Visualization of cloud masking algorithm performance comparison results"
+              />
+              <img
+                src="cloud-masking-results-viz-5.jpg"
+                alt="Visualization of cloud masking algorithm performance comparison results"
+              />
+            </div>
             <h3>Problem Statement</h3>
             Cloud contamination is one of the largest sources of error in optical satellite imagery 
             and can significantly impact environmental monitoring workflows. This project investigated 
