@@ -121,10 +121,7 @@
           <p>
             I am a spatial and data analyst focused on using data visualization,
             GIS, and analytics to support environmental organizations working on
-            renewable energy and climate mitigation.
-          </p>
-          <p>
-            I enjoy turning complex datasets into clear stories that help teams
+            renewable energy and climate mitigation. I enjoy turning complex datasets into clear stories that help teams
             make informed decisions for impact.
           </p>
         </div>
@@ -134,10 +131,78 @@
         <h2>Projects</h2>
         <ul class="projects">
           <li>
-            <strong>Spatial Suitability Mapping</strong><br />
-            Site suitability analysis for renewable energy using spatial data.
-            <a href="https://github.com/oliviajakli" target="_blank" rel="noopener noreferrer">View repository</a>
-          </li>
+            <strong>
+              Examining the effect of cloud masking algorithms on remote sensing 
+              data accuracy and processing to improve water quality in Sandusky Bay, Ohio
+            </strong><br />
+            Cloud mask algorithm comparison analysis for water quality assessment using spatial data.
+            <a href="https://github.com/oliviajakli/cloud-masking" target="_blank" rel="noopener noreferrer">View repository</a>
+            <h3>Problem Statement</h3>
+            Cloud contamination is one of the largest sources of error in optical satellite imagery 
+            and can significantly impact environmental monitoring workflows. This project investigated 
+            which cloud masking algorithm provides the most accurate and reliable cloud detection for 
+            freshwater remote sensing applications in Sandusky Bay, Ohio, where satellite imagery 
+            is used to support harmful algal bloom and water-quality monitoring.
+            <h3>Approach</h3>
+            I designed and implemented a comparative evaluation framework to assess three 
+            Sentinel-2 cloud masking algorithms: 
+            <ul>
+              <li>a custom Hybrid (Sen2Cor-based) approach</li>
+              <li>s2cloudless</li>
+              <li>Cloud Score+</li>
+            </ul>
+
+            Using Google Earth Engine and Harmonized Sentinel-2 imagery, I generated cloud masks 
+            for 15 scenes spanning multiple years and varying cloud conditions. Ground-truth reference masks 
+            were created using ESA's IRIS active-learning segmentation tool. I then evaluated 
+            algorithm performance using confusion matrices, Matthew's Correlation Coefficient (MCC), 
+            F1-score, IoU, bootstrap confidence intervals, effect size analysis, and nonparametric 
+            hypothesis testing (Friedman and Wilcoxon signed-rank tests).
+          <h3>Key Findings</h3>
+          <ul>
+              <li>Cloud Score+ achieved the highest overall performance across all primary evaluation metrics.</li>
+              <li>Median bootstrapped MCC scores ranked algorithms as:
+                <ul>
+                  <li>Cloud Score+: 0.539</li>
+                  <li>s2cloudless: 0.402</li>
+                  <li>Hybrid: 0.323</li>
+                </ul>
+              </li>
+              <li>Statistical testing confirmed significant performance differences between algorithms (Friedman χ² = 22.93, p < 0.001).</li>
+              <li>Cloud Score+ demonstrated the best balance between minimizing cloud contamination and preserving usable imagery.</li>
+              <li>Error analysis revealed that the Hybrid approach frequently failed in low-cloud conditions, while s2cloudless tended to over-mask clear pixels.</li>
+            </ul>
+            <h3>Tools & Skills</h3>
+            <h4>Tools</h4>
+            <ul>
+              <li>Google Earth Engine</li>
+              <li>Python</li>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>SciPy</li>
+              <li>Scikit-learn</li>
+              <li>QGIS</li>
+              <li>ESA IRIS Annotation Tool</li>
+              <li>Sentinel-2 Satellite Imagery</li>
+            </ul>
+            <h4>Skills</h4>
+            <ul>
+              <li>Remote Sensing & Geospatial Analysis</li>
+              <li>Environmental Data Science</li>
+              <li>Statistical Hypothesis Testing</li>
+              <li>Bootstrap Resampling</li>
+              <li>Machine Learning Evaluation</li>
+              <li>Image Classification</li>
+              <li>Data Visualization</li>
+              <li>Experimental Design</li>
+              <li>Reproducible Research</li>
+            </ul>
+            <h3>Impact</h3>
+            This project provides an evidence-based comparison of widely used cloud masking 
+            approaches for freshwater remote sensing workflows. The results demonstrate that 
+            Cloud Score+ offers the most reliable cloud detection performance for water-quality 
+            monitoring applications, helping improve the quality of downstream environmental analyses 
+            and supporting more accurate monitoring of harmful algal bloom conditions.
           <li>
             <strong>Climate Risk Dashboard</strong><br />
             Interactive data visualization for climate indicators and trends.
